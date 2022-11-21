@@ -5,9 +5,7 @@
   "main": "src/index.ts",
   "type": "module",
   "scripts": {
-    "compile": "tsc",
-    "dev": "nodemon --watch './**/*.ts' --exec 'node --experimental-specifier-resolution=node --loader ts-node/esm' src/index.ts",
-    "start": "npm run compile && node ./dist/src/index.js"
+    "dev": "nodemon --watch './**/*.ts' --exec 'node --experimental-specifier-resolution=node --loader ts-node/esm' src/index.ts"
   },
   "prisma": {
     "seed": "ts-node-esm prisma/seed.ts"
