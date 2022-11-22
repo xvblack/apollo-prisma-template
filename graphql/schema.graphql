@@ -20,3 +20,11 @@ type Query {
   users: [User]
   posts: [Post]
 }
+
+type Welcome {
+  content: String
+}
+
+type Subscription {
+  welcome: Welcome
+}
